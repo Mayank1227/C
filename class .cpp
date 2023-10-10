@@ -1,14 +1,51 @@
- #include<iostrem>
+#include<iostream>
 using namespace std;
-class student
+class Student
 {
-	public: //access modifiers
-	int age=30;   //data member
-	
+	public:
+		int id;
+		string name;
+		string subject;
+		void setID(int id)
+		{
+			this->id = id;
+		}
+		int getID()
+		{
+			return this->id;
+			
+		}
+		void setName(string name)
+		{
+			this->name = name;
+		}
+		string getName()
+		{
+			return this->name;
+		}
+			void setsubject(string subject)
+		{
+			this->subject = subject;
+		}
+		string getsubjet()
+		{
+			return this->subject;
+		}
 };
 main()
 {
-	student s1;
-	count<<s1.age;
+	// object creation
+	Student s1;
+	s1.setID(10);
+	cout<<s1.getID();
+	
+	s1.setName("\nmayank");
+	cout<<s1.getName();
+	
+	s1.setsubject("\njava");
+	cout<<s1.getsubjet();
 }
+
+
+
 
